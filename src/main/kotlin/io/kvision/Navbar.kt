@@ -23,7 +23,11 @@ fun Container.navbar(primary: Boolean = true) {
                     role = "button"
                     setAttribute("aria-label", "menu")
                     setAttribute("aria-expanded", "false")
-                    setAttribute("data-target", "navbar-menu")
+                    if (primary) {
+                        setAttribute("data-target", "navbar-menu")
+                    } else {
+                        setAttribute("data-target", "cloned-navbar-menu")
+                    }
                     span {
                         setAttribute("aria-hidden", "true")
                     }
