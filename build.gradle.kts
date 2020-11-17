@@ -114,7 +114,7 @@ afterEvaluate {
             group = "package"
             destinationDirectory.set(file("$buildDir/libs"))
             val distribution =
-                project.tasks.getByName("browserProductionWebpack", KotlinWebpack::class).destinationDirectory!!
+                project.tasks.getByName("browserProductionWebpack", KotlinWebpack::class).destinationDirectory
             from(distribution) {
                 include("*.*")
             }
@@ -122,6 +122,19 @@ afterEvaluate {
             duplicatesStrategy = DuplicatesStrategy.EXCLUDE
             inputs.files(distribution, webDir)
             outputs.file(archiveFile)
+        }
+        create("dist", Copy::class) {
+            dependsOn("browserProductionWebpack")
+            group = "package"
+            destinationDir = file("$buildDir/dist")
+            val distribution =
+                project.tasks.getByName("browserProductionWebpack", KotlinWebpack::class).destinationDirectory
+            from(distribution) {
+                include("*.*")
+            }
+            from(webDir)
+            inputs.files(distribution, webDir)
+            outputs.files(destinationDir)
         }
     }
 }
