@@ -248,7 +248,7 @@ object Config {
                     require("images/illustrations/icons/mouse-globe.svg"),
                     "Legacy docs",
                     """
-          Older API documentation is still available at [https://rjaros.github.io/kvision/api/](https://rjaros.github.io/kvision/api/).
+          Older API documentation is still available at [here](https://rjaros.github.io/kvision/api/).
 
           If you are interested in the documentation for KVision 1.x (based on Bootstrap 3), you can [find the guide here](https://kvision.gitbook.io/kvision-guide/v/kvision-1.x/) and the [API docs here](https://rjaros.github.io/kvision/api1/).
                     """.trimIndent()

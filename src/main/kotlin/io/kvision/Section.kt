@@ -31,7 +31,7 @@ fun Container.section(section: Section) {
 
 fun Container.article(article: Article, marginClass: String) {
     customTag("article", className = "media icon-box") {
-        tag(TAG.FIGURE, className = "media-left") {
+        tag(TAG.FIGURE, className = "media-left is-hidden-mobile") {
             p(className = "image") {
                 image(article.image, "")
             }
