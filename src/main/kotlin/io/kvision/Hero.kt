@@ -1,15 +1,7 @@
 package io.kvision
 
 import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.TAG
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.h1
-import pl.treksoft.kvision.html.h2
-import pl.treksoft.kvision.html.image
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.p
-import pl.treksoft.kvision.html.section
-import pl.treksoft.kvision.html.tag
+import pl.treksoft.kvision.html.*
 import pl.treksoft.kvision.utils.perc
 
 fun Container.hero() {
@@ -24,6 +16,9 @@ fun Container.hero() {
                     }
                     h1(Hero.title, className = "title is-1 is-bold is-spaced")
                     h2(markedInline(Hero.subtitle), rich = true, className = "subtitle is-5 is-muted")
+                    h3 {
+                        link("Latest release: ${Hero.version}", Hero.releasesUrl, target = "_blank")
+                    }
                     p {
                         link(
                             Hero.buttonText,

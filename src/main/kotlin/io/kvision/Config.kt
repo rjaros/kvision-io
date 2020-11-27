@@ -10,6 +10,8 @@ object Navbar {
 }
 
 object Hero {
+    val version = "3.17.2"
+    val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
     val logoAlt = "KVision logo"
