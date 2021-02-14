@@ -14,10 +14,6 @@ group = "io.kvision"
 repositories {
     mavenCentral()
     jcenter()
-    maven { url = uri("https://dl.bintray.com/kotlin/kotlin-eap") }
-    maven { url = uri("https://kotlin.bintray.com/kotlinx") }
-    maven { url = uri("https://dl.bintray.com/kotlin/kotlin-js-wrappers") }
-    maven { url = uri("https://dl.bintray.com/rjaros/kotlin") }
     mavenLocal()
 }
 
@@ -60,8 +56,8 @@ kotlin {
         implementation(npm("marked", "^1.2.4"))
         implementation(npm("smooth-scroll", "^16.1.3"))
         implementation(npm("@types/smooth-scroll", "*"))
-        implementation("pl.treksoft:kvision:$kvisionVersion")
-        implementation("pl.treksoft:kvision-fontawesome:$kvisionVersion")
+        implementation("io.kvision:kvision:$kvisionVersion")
+        implementation("io.kvision:kvision-fontawesome:$kvisionVersion")
     }
     sourceSets["test"].dependencies {
         implementation(kotlin("test-js"))
