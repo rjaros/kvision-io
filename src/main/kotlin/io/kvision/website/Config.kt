@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "4.1.1"
+    val version = "4.2.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -98,6 +98,7 @@ object Config {
           - [Bootstrap](https://getbootstrap.com/) styles, typography and components
           - [Snabbdom](https://github.com/snabbdom/snabbdom) fast virtual DOM implementation
           - [Font Awesome](https://fontawesome.com/) icons
+          - Unidirectional and bidirectional bindings for Kotlin Flows
           - [Redux](https://redux.js.org/) and [ReduxKotlin](https://reduxkotlin.org/) modules
           - [React](https://reactjs.org/) components and [Onsen UI](https://onsen.io/) mobile web components
           - Internationalization support based on [gettext](https://www.gnu.org/software/gettext/) translations
@@ -148,6 +149,15 @@ object Config {
           A simple application presenting all main features of the KVision framework.
 
           \[ [Sources](https://github.com/rjaros/kvision-examples/tree/master/showcase) \] \[ [Live demo](https://rjaros.github.io/kvision-examples/showcase/) \]
+                    """.trimIndent()
+                ),
+                Article(
+                    require("images/illustrations/icons/doc-sync.svg"),
+                    "Fomantic-UI demo",
+                    """
+          A demo application created with [Fomantic-UI](https://fomantic-ui.com/) toolkit. It shows how to create KVision applications with a modern design system alternative to Bootstrap. It also presents state management based on Kotlin flows (using both StateFlow and SharedFlow).
+
+          \[ [Sources](https://github.com/rjaros/kvision-examples/tree/master/fomantic) \] \[ [Live demo](https://rjaros.github.io/kvision-examples/fomantic/) \]
                     """.trimIndent()
                 ),
                 Article(
