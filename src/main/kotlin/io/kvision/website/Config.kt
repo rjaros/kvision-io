@@ -240,7 +240,7 @@ object Config {
                     """
           It's generated directly from the source codes with new Dokka 1.4 tool.
 
-          \[ [API docs](https://rjaros.github.io/kvision/kvision/index.html) \]
+          \[ [API docs](https://rjaros.github.io/kvision/index.html) \]
                     """.trimIndent()
                 ),
                 Article(
