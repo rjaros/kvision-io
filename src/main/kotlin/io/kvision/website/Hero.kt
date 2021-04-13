@@ -1,13 +1,23 @@
 package io.kvision.website
 
 import io.kvision.core.Container
+import io.kvision.core.JustifyContent
 import io.kvision.html.*
+import io.kvision.panel.hPanel
 import io.kvision.utils.perc
+import io.kvision.utils.px
+import io.kvision.utils.rem
 
 fun Container.hero() {
     section(className = "hero is-default is-bold") {
         navbar()
         navbar(false)
+        hPanel(justify = JustifyContent.FLEXEND, noWrappers = true, className = "container") {
+            iframe(src = "https://plugins.jetbrains.com/embeddable/install/16533", iframeHeight = 48, iframeWidth = 245) {
+                marginRight = (-1).rem
+                width = 245.px
+            }
+        }
         div(className = "hero-body") {
             div(className = "container") {
                 div(className = "has-text-centered") {
