@@ -1,2 +1,2 @@
-config.module.rules.push({ test: /\.s[ac]ss$/, loader: "style-loader!css-loader!sass-loader" });
+config.module.rules.push({ test: /\.s[ac]ss$/, use: ["style-loader", { loader: "css-loader", options: {sourceMap: false} }, "sass-loader" ] });
 
