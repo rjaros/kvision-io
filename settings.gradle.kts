@@ -1,8 +1,7 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         mavenCentral()
-        jcenter()
-        maven { url = uri("https://plugins.gradle.org/m2/") }
         mavenLocal()
     }
 }

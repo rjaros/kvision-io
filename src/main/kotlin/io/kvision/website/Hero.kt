@@ -15,7 +15,7 @@ fun Container.hero() {
     section(className = "hero is-default is-bold") {
         navbar()
         navbar(false)
-        hPanel(justify = JustifyContent.FLEXEND, noWrappers = true, className = "container") {
+        hPanel(justify = JustifyContent.FLEXEND, className = "container") {
             div {
                 marginRight = (-1).rem
                 id = "marketplace"

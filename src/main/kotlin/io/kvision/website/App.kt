@@ -1,10 +1,11 @@
 package io.kvision.website
 
 import io.kvision.Application
+import io.kvision.CoreModule
+import io.kvision.FontAwesomeModule
 import io.kvision.html.div
 import io.kvision.html.link
 import io.kvision.module
-import io.kvision.panel.ContainerType
 import io.kvision.panel.root
 import io.kvision.require
 import io.kvision.startApplication
@@ -16,7 +17,7 @@ class App : Application() {
     }
 
     override fun start() {
-        root("kvapp", ContainerType.NONE, addRow = false) {
+        root("kvapp") {
             hero()
             Config.sections.forEach {
                 section(it)
@@ -40,5 +41,5 @@ class App : Application() {
 }
 
 fun main() {
-    startApplication(::App, module.hot)
+    startApplication(::App, module.hot, FontAwesomeModule, CoreModule)
 }

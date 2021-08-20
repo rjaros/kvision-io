@@ -5,12 +5,12 @@ import io.kvision.require
 object Navbar {
     val title = "KVision"
     val menu =
-        mapOf("features" to "Features", "examples" to "Examples", "docs" to "Documentation", "customers" to "Customers")
+        mapOf("features" to "Features", "examples" to "Examples", "docs" to "Documentation", "showcases" to "Showcases")
     val starLabel = "Star rjaros/kvision on GitHub"
 }
 
 object Hero {
-    val version = "4.8.3"
+    val version = "5.0.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -28,7 +28,7 @@ class App : Application() {
     override fun start() {
         root("root") {
             vPanel {
-                h1(state) {
+                h1().bind(state) {
                     +it
                 }
                 button("Add an exclamation mark").onClick {
@@ -95,7 +95,7 @@ object Config {
                     """
           - Idiomatic [Kotlin](https://kotlinlang.org/) syntax with type safe DSL builders
           - Both reactive and imperative programming models
-          - [Bootstrap](https://getbootstrap.com/) styles, typography and components
+          - [Bootstrap 5](https://getbootstrap.com/) styles, typography and components
           - [Snabbdom](https://github.com/snabbdom/snabbdom) fast virtual DOM implementation
           - [Font Awesome](https://fontawesome.com/) icons
           - Unidirectional and bidirectional bindings for Kotlin Flows
@@ -238,7 +238,7 @@ object Config {
                     require("images/illustrations/icons/doc-sync.svg"),
                     "API documentation",
                     """
-          It's generated directly from the source codes with new Dokka 1.4 tool.
+          It's generated directly from the source codes with Dokka 1.5 tool.
 
           \[ [API docs](https://rjaros.github.io/kvision/index.html) \]
                     """.trimIndent()
@@ -260,7 +260,9 @@ object Config {
                     require("images/illustrations/icons/mouse-globe.svg"),
                     "Legacy docs",
                     """
-          Older API documentation is still available at [here](https://rjaros.github.io/kvision/api/).
+          API documentation for KVision 4.x is still available [here](https://rjaros.github.io/kvision/api4/).
+
+          Even older API documentation is available [here](https://rjaros.github.io/kvision/api/).
 
           If you are interested in the documentation for KVision 1.x (based on Bootstrap 3), you can [find the guide here](https://kvision.gitbook.io/kvision-guide/v/kvision-1.x/) and the [API docs here](https://rjaros.github.io/kvision/api1/).
                     """.trimIndent()
@@ -274,7 +276,7 @@ data class UseCase(val url: String, val image: String, val caption: String)
 
 @Suppress("UnsafeCastFromDynamic")
 object UseCases {
-    val id = "customers"
+    val id = "showcases"
     val title = "Stable and verified"
     val subtitle = "KVision applications are already running on production websites used by hundreds of users every day"
     val useCases = listOf(
