@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.0.0"
+    val version = "5.0.1"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -249,7 +249,7 @@ object Config {
                     """
           Check [KVision blog posts at dev.to](https://dev.to/t/kvision/latest) to learn more about the framework and it's development process.
 
-          Everyday you can talk with KVision developers on Kotlin Slack [#kvision](https://kotlinlang.slack.com/messages/kvision/) channel.
+          Everyday you can talk with KVision users and developers on Kotlin Slack [#kvision](https://kotlinlang.slack.com/messages/kvision/) channel and on [Discord server](https://discord.gg/SdsN3arN2w).
 
           [Fill an issue on GitHub](https://github.com/rjaros/kvision/issues) if you find a bug or have a feature request. Open and closed issues are also a valuable source of information.
 
@@ -325,6 +325,7 @@ object Footer {
         mapOf(
             "https://github.com/rjaros/kvision" to "fab fa-github fa-2x",
             "https://kotlinlang.slack.com/?redir=%2Fmessages%2FCL4C1SLKC" to "fab fa-slack fa-2x",
+            "https://discord.gg/SdsN3arN2w" to "fab fa-discord fa-2x",
             "https://dev.to/t/kvision/latest" to "fab fa-dev fa-2x"
         )
     )
