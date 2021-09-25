@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.1.1"
+    val version = "5.2.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -19,7 +19,7 @@ object Hero {
     val subtitle =
         "Build modern web applications with the full power of the Kotlin language. Choose **yourself** the preferred way."
     val buttonText = "Get started"
-    val buttonLink = "https://kvision.gitbook.io/kvision-guide/part-1-fundamentals/setting-up"
+    val buttonLink = "https://kvision.gitbook.io/kvision-guide/1.-getting-started-1"
     val reactiveHello = """
 class App : Application() {
 
@@ -229,7 +229,6 @@ object Config {
                     "KVision Guide",
                     """
           The guide is published on GitBook. It contains all information about the framework, its components and typical use cases.
-          It's split into three parts: "Fundamentals", "Advanced features" and "Server side interfaces".
 
           \[ [Open the guide](https://kvision.gitbook.io/kvision-guide/) \]
                     """.trimIndent()
