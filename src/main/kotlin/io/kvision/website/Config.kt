@@ -237,7 +237,7 @@ object Config {
                     require("images/illustrations/icons/doc-sync.svg"),
                     "API documentation",
                     """
-          It's generated directly from the source codes with Dokka 1.5 tool.
+          It's generated directly from the source codes with Dokka 1.6 tool.
 
           \[ [API docs](https://rjaros.github.io/kvision/index.html) \]
                     """.trimIndent()
