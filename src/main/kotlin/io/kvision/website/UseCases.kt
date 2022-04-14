@@ -22,8 +22,13 @@ fun Container.useCases() {
             }
             div(className = "content-wrapper") {
                 div(className = "columns is-vcentered") {
-                    UseCases.useCases.forEach {
-                        useCase(it)
+                    UseCases.useCases1.forEach {
+                        useCase(it, 4)
+                    }
+                }
+                div(className = "columns is-vcentered") {
+                    UseCases.useCases2.forEach {
+                        useCase(it, 6)
                     }
                 }
             }
@@ -31,8 +36,8 @@ fun Container.useCases() {
     }
 }
 
-fun Container.useCase(useCase: UseCase) {
-    div(className = "column is-4 mt-30") {
+fun Container.useCase(useCase: UseCase, size: Int = 4) {
+    div(className = "column is-$size mt-30") {
         tag(TAG.FIGURE, className = "testimonial") {
             div(className = "box has-text-centered") {
                 link("", useCase.url) {

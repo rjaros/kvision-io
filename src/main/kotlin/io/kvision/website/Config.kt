@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.8.3"
+    val version = "5.9.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -278,18 +278,30 @@ object UseCases {
     val id = "showcases"
     val title = "Stable and verified"
     val subtitle = "KVision applications are already running on production websites used by hundreds of users every day"
-    val useCases = listOf(
+    val useCases1 = listOf(
         UseCase("https://peup.finn.pl", require("images/peup.png"), "Public administration services"),
         UseCase(
             "https://www.eurzad.radlin.pl/#!/rejestry/S.0007/10/1/default/_",
             require("images/eurzad.png"),
-            "Public information bulletin"
+            "The public information bulletin"
+        ),
+        UseCase(
+            "https://rejestr.nil.org.pl/",
+            require("images/crl.png"),
+            "The database of physicians"
+        )
+    )
+    val useCases2 = listOf(
+        UseCase(
+            "https://sygnalista.zawiercie.powiat.pl/",
+            require("images/sygnalista.png"),
+            "The secure whistleblower system"
         ),
         UseCase(
             "https://e-rezerwacje.finn.pl/gmwodzislawsl/",
             require("images/erezerwacje.png"),
-            "Online reservation system"
-        )
+            "The online reservation system"
+        ),
     )
 }
 
