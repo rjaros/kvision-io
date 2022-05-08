@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.9.0"
+    val version = "5.10.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -110,7 +110,7 @@ object Config {
                     """
           - Sophisticated layout containers
           - Forms with type safe data model and built-in validation
-          - Different text input components including rich text and typeahead
+          - Different text input components including rich text, typeahead and input mask support
           - Buttons, checkboxes and radios
           - Date and time picker
           - Spinner and range numeric input components
