@@ -10,7 +10,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.13.1"
+    val version = "5.14.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
@@ -111,14 +111,14 @@ object Config {
           - Sophisticated layout containers
           - Forms with type safe data model and built-in validation
           - Different text input components including rich text, typeahead and input mask support
-          - Buttons, checkboxes and radios
+          - Buttons, checkboxes, radios and switches
           - Date and time picker
           - Spinner and range numeric input components
           - Advanced select box with ajax support
           - File upload with preview and multi-selection
           - Advanced charts
           - Reactive tables
-          - Navigation bar, toolbar and context menu
+          - Navigation bar, toolbar, context menu and offcanvas sidebar
           - Tooltips and popovers
           - Modals including ready to use alerts and confirm dialogs
           - Floating, re-sizable windows
@@ -237,7 +237,7 @@ object Config {
                     require("images/illustrations/icons/doc-sync.svg"),
                     "API documentation",
                     """
-          It's generated directly from the source codes with Dokka 1.6 tool.
+          It's generated directly from the source codes with the Dokka tool.
 
           \[ [API docs](https://rjaros.github.io/kvision/index.html) \]
                     """.trimIndent()
