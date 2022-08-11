@@ -24,7 +24,7 @@ fun Container.hero() {
         div(className = "hero-body") {
             div(className = "container") {
                 div(className = "has-text-centered") {
-                    tag(TAG.FIGURE, className = "image is-96x96 is-inline-block") {
+                    figure(className = "image is-96x96 is-inline-block") {
                         image(Hero.logo, Hero.logoAlt)
                     }
                     h1(Hero.title, className = "title is-1 is-bold is-spaced")
@@ -42,7 +42,7 @@ fun Container.hero() {
                 }
                 div(className = "columns") {
                     div(className = "column is-half") {
-                        tag(TAG.CODE, Hero.reactiveHello, className = "code-blocks-selector") {
+                        code(Hero.reactiveHello, className = "code-blocks-selector") {
                             width = 100.perc
                             setAttribute("data-highlight-only", "nocursor")
                             setAttribute("theme", "darcula")
@@ -52,7 +52,7 @@ fun Container.hero() {
                         }
                     }
                     div(className = "column is-half") {
-                        tag(TAG.CODE, Hero.imperativeHello, className = "code-blocks-selector") {
+                        code(Hero.imperativeHello, className = "code-blocks-selector") {
                             width = 100.perc
                             setAttribute("data-highlight-only", "nocursor")
                             setAttribute("theme", "idea")

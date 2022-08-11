@@ -1,14 +1,14 @@
 package io.kvision.website
 
 import io.kvision.core.Container
-import io.kvision.html.TAG
 import io.kvision.html.div
+import io.kvision.html.figcaption
+import io.kvision.html.figure
 import io.kvision.html.h2
 import io.kvision.html.h3
 import io.kvision.html.image
 import io.kvision.html.link
 import io.kvision.html.section
-import io.kvision.html.tag
 
 fun Container.useCases() {
     link("") {
@@ -38,13 +38,13 @@ fun Container.useCases() {
 
 fun Container.useCase(useCase: UseCase, size: Int = 4) {
     div(className = "column is-$size mt-30") {
-        tag(TAG.FIGURE, className = "testimonial") {
+        figure(className = "testimonial") {
             div(className = "box has-text-centered") {
                 link("", useCase.url) {
                     setAttribute("target", "_blank")
-                    tag(TAG.FIGURE, className = "image is-inline-block") {
+                    figure(className = "image is-inline-block") {
                         image(useCase.image, "")
-                        tag(TAG.FIGCAPTION, useCase.caption)
+                        figcaption(useCase.caption)
                     }
                 }
             }

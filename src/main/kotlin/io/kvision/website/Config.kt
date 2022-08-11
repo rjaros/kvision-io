@@ -1,17 +1,25 @@
 package io.kvision.website
 
 import io.kvision.require
+import io.kvision.types.toDateF
 
 object Navbar {
     val title = "KVision"
     val menu =
-        mapOf("features" to "Features", "examples" to "Examples", "docs" to "Documentation", "showcases" to "Showcases")
+        mapOf(
+            "features" to "Features",
+            "videos" to "Videos",
+            "examples" to "Examples",
+            "docs" to "Documentation",
+            "showcases" to "Showcases"
+        )
     val starLabel = "Star rjaros/kvision on GitHub"
 }
 
 object Hero {
     val version = "5.14.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
+
     @Suppress("UnsafeCastFromDynamic")
     val logo: String = require("images/logos/kvision.svg")
     val logoAlt = "KVision logo"
@@ -71,13 +79,16 @@ fun main() {
 
 data class Article(val image: String, val title: String, val text: String)
 
+data class Video(val url: String, val title: String, val description: String)
+
 data class Section(
     val id: String,
     val title: String,
     val subtitle: String,
     val image: String,
-    val articles: List<Article>,
-    val articleMarginClass: String = "mt-30"
+    val articles: List<Article>? = null,
+    val videos: List<Video>? = null,
+    val marginClass: String = "mt-30"
 )
 
 @Suppress("UnsafeCastFromDynamic")
@@ -135,6 +146,25 @@ object Config {
                     """.trimIndent()
                 ),
             )
+        ),
+        Section(
+            "videos",
+            "Videos",
+            "Watch videos about KVision",
+            require("images/video.jpg"),
+            videos = listOf(
+                Video(
+                    "-mua_TAE-ww",
+                    "KVision - Build Modern Web Apps with Kotlin",
+                    "Vishnu Mandole, Meet Kotlin, " + "2022-08-08".toDateF("YYYY-MM-DD").toLocaleDateString()
+                ),
+                Video(
+                    "RLTLCrEOU6I",
+                    "Pragmatic web development with KVision and Kotlin/JS",
+                    "Robert Jaros, TKUG, " + "2021-06-06".toDateF("YYYY-MM-DD").toLocaleDateString()
+                )
+            ),
+            marginClass = "mt-30"
         ),
         Section(
             "examples",
@@ -216,7 +246,7 @@ object Config {
           \[ [Open project](https://github.com/rjaros/kvision-examples) \]
                     """.trimIndent()
                 ),
-            ), "mt-20"
+            ), marginClass = "mt-20"
         ),
         Section(
             "docs",
@@ -266,7 +296,7 @@ object Config {
           If you are interested in the documentation for KVision 1.x (based on Bootstrap 3), you can [find the guide here](https://kvision.gitbook.io/kvision-guide/v/kvision-1.x/) and the [API docs here](https://rjaros.github.io/kvision/api1/).
                     """.trimIndent()
                 ),
-            ), "mt-20"
+            ), marginClass = "mt-20"
         )
     )
 }
