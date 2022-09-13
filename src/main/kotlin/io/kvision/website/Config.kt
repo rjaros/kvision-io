@@ -17,7 +17,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.14.0"
+    val version = "5.15.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
