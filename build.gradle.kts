@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
@@ -14,7 +15,6 @@ group = "io.kvision"
 
 repositories {
     mavenCentral()
-    jcenter()
     mavenLocal()
 }
 
@@ -24,8 +24,12 @@ val kvisionVersion: String by System.getProperties()
 
 val webDir = file("src/main/web")
 
+val compilerType = if (project.gradle.startParameter.taskNames.contains("run"))
+    KotlinJsCompilerType.LEGACY
+else KotlinJsCompilerType.IR
+
 kotlin {
-    js {
+    js(compilerType) {
         browser {
             runTask {
                 outputFileName = "main.bundle.js"
