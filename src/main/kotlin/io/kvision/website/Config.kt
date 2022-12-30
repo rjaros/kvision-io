@@ -17,7 +17,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "5.18.1"
+    val version = "6.0.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
@@ -289,6 +289,8 @@ object Config {
                     require("images/illustrations/icons/mouse-globe.svg"),
                     "Legacy docs",
                     """
+          API documentation for KVision 5.x is still available [here](https://rjaros.github.io/kvision/api5/).
+
           API documentation for KVision 4.x is still available [here](https://rjaros.github.io/kvision/api4/).
 
           Even older API documentation is available [here](https://rjaros.github.io/kvision/api/).
