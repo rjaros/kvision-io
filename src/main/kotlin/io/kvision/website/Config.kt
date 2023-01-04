@@ -214,7 +214,7 @@ object Config {
                     """
           A complete, fullstack address book application. It presents an innovative way to build fullstack applications with KVision and [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) or [Micronaut](https://micronaut.io) frameworks.
 
-          \[ [Spring Boot version sources](https://github.com/rjaros/kvision-examples/tree/master/addressbook-fullstack-spring-boot) \] \[ [Live demo on Heroku](https://kvision-address-book.herokuapp.com/) \]
+          \[ [Spring Boot version sources](https://github.com/rjaros/kvision-examples/tree/master/addressbook-fullstack-spring-boot) \]
                     """.trimIndent()
                 ),
                 Article(
@@ -225,7 +225,7 @@ object Config {
 
           \[ [Frontend version sources](https://github.com/rjaros/kvision-realworld-example-app) \] \[ [Live demo](https://rjaros.github.io/kvision-realworld-example-app/) \]
 
-          \[ [Fullstack version sources](https://github.com/rjaros/kvision-realworld-example-app-fullstack) \] \[ [Live demo on Heroku](https://kvision-realworld-fullstack.herokuapp.com/) \]
+          \[ [Fullstack version sources](https://github.com/rjaros/kvision-realworld-example-app-fullstack) \]
                     """.trimIndent()
                 ),
                 Article(
@@ -241,7 +241,7 @@ object Config {
                     require("images/illustrations/icons/laptop-globe.svg"),
                     "More examples and templates",
                     """
-          More examples and templates are available in the dedicated GitHub repostitory.
+          More examples and templates are available in the dedicated GitHub repository.
 
           \[ [Open project](https://github.com/rjaros/kvision-examples) \]
                     """.trimIndent()
@@ -349,7 +349,7 @@ object Footer {
                 mapOf(
                     "https://kvision.gitbook.io/kvision-guide/" to "User guide",
                     "https://github.com/rjaros/kvision-examples" to "Examples and templates",
-                    "https://rjaros.github.io/kvision/kvision/index.html" to "API documentation",
+                    "https://rjaros.github.io/kvision/index.html" to "API documentation",
                     "https://github.com/rjaros/kvision-io" to "Website Kotlin/JS sources",
                 )
             ),
