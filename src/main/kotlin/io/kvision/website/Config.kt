@@ -229,10 +229,10 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/doc-sync.svg"),
+                    require("images/illustrations/icons/mouse-globe.svg"),
                     "KontaktApp application",
                     """
-          A Self Management Platform built with KVision and Ktor web framework, created by [Muhammed Aliyu (Andromadus)](https://github.com/phalcorine). Uses Arrow (Core), Ballast, Exposed, Koin, Kotlinx-datetime and Ktor.
+          A Self Management Platform built with KVision and Ktor web framework, created by [Muhammed Aliyu (Andromadus)](https://github.com/phalcorine). Uses Arrow, Ballast, Exposed, Koin, Kotlinx-datetime and Ktor.
 
           \[ [Sources](https://github.com/phalcorine/kontaktapp) \]
                     """.trimIndent()
