@@ -17,7 +17,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "6.3.2"
+    val version = "6.4.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
@@ -134,6 +134,7 @@ object Config {
           - Modals including ready to use alerts and confirm dialogs
           - Floating, re-sizable windows
           - Configurable toasts
+          - Theme switcher for dark mode with auto-detection
                     """.trimIndent()
                 ),
                 Article(
