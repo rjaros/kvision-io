@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 plugins {
     val kotlinVersion: String by System.getProperties()
     kotlin("plugin.serialization") version kotlinVersion
-    kotlin("js") version kotlinVersion
+    kotlin("multiplatform") version kotlinVersion
     val kvisionVersion: String by System.getProperties()
     id("io.kvision") version kvisionVersion
 }
@@ -21,13 +21,11 @@ repositories {
 val kotlinVersion: String by System.getProperties()
 val kvisionVersion: String by System.getProperties()
 
-val webDir = file("src/main/web")
-
 kotlin {
     js {
         browser {
-            runTask {
-                outputFileName = "main.bundle.js"
+            runTask(Action {
+                mainOutputFileName = "main.bundle.js"
                 sourceMaps = false
                 devServer = KotlinWebpackConfig.DevServer(
                     open = false,
@@ -38,19 +36,19 @@ kotlin {
                     ),
                     static = mutableListOf("$buildDir/processedResources/js/main")
                 )
-            }
-            webpackTask {
-                outputFileName = "main.bundle.js"
-            }
-            testTask {
+            })
+            webpackTask(Action {
+                mainOutputFileName = "main.bundle.js"
+            })
+            testTask(Action {
                 useKarma {
                     useChromeHeadless()
                 }
-            }
+            })
         }
         binaries.executable()
     }
-    sourceSets["main"].dependencies {
+    sourceSets["jsMain"].dependencies {
         implementation(npm("sass", "^1.29.0"))
         implementation(npm("sass-loader", "^10.1.0"))
         implementation(npm("marked", "^1.2.4"))
@@ -60,26 +58,28 @@ kotlin {
         implementation("io.kvision:kvision-fontawesome:$kvisionVersion")
         implementation("io.kvision:kvision-jquery:$kvisionVersion")
     }
-    sourceSets["test"].dependencies {
+    sourceSets["jsTest"].dependencies {
         implementation(kotlin("test-js"))
     }
-    sourceSets["main"].resources.srcDir(webDir)
 }
+
 afterEvaluate {
     tasks {
         create("dist", Copy::class) {
-            dependsOn("browserProductionWebpack")
+            dependsOn("jsBrowserProductionWebpack")
             group = "package"
-            destinationDir = file("$buildDir/dist")
+            destinationDir = file("$buildDir/app")
             val distribution =
-                project.tasks.getByName("browserProductionWebpack", KotlinWebpack::class).destinationDirectory
+                project.tasks.getByName("jsBrowserProductionWebpack", KotlinWebpack::class).outputDirectory
             from(distribution) {
                 include("*.*")
             }
-            from(webDir)
+            val processedResources =
+                project.tasks.getByName("jsProcessResources", Copy::class).destinationDir
+            from(processedResources)
             duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-            inputs.files(distribution, webDir)
-            outputs.files(destinationDir)
+            inputs.files(distribution, processedResources)
+            outputs.dirs(destinationDir)
         }
     }
 }

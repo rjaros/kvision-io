@@ -17,7 +17,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "6.6.0"
+    val version = "7.0.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
@@ -143,7 +143,8 @@ object Config {
                     """
           - Innovative connectivity interface for many popular server side frameworks, to build fullstack applications with shared code for data model and business logic
           - Full support for [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) and [Micronaut](https://micronaut.io) frameworks
-          - Experimental type safe websockets connections
+          - Type safe websockets connections
+          - Type safe SSE (server-sent events)
                     """.trimIndent()
                 ),
             )
