@@ -34,7 +34,7 @@ kotlin {
                         "/kv/*" to "http://localhost:8080",
                         "/kvws/*" to mapOf("target" to "ws://localhost:8080", "ws" to true)
                     ),
-                    static = mutableListOf("$buildDir/processedResources/js/main")
+                    static = mutableListOf("${layout.buildDirectory.asFile.get()}/processedResources/js/main")
                 )
             })
             webpackTask(Action {
@@ -68,7 +68,7 @@ afterEvaluate {
         create("dist", Copy::class) {
             dependsOn("jsBrowserProductionWebpack")
             group = "package"
-            destinationDir = file("$buildDir/app")
+            destinationDir = file("${layout.buildDirectory.asFile.get()}/app")
             val distribution =
                 project.tasks.getByName("jsBrowserProductionWebpack", KotlinWebpack::class).outputDirectory
             from(distribution) {
