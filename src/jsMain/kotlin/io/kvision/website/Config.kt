@@ -17,7 +17,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "7.4.5"
+    val version = "7.5.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
@@ -107,6 +107,7 @@ object Config {
           - Idiomatic [Kotlin](https://kotlinlang.org/) syntax with type safe DSL builders
           - Both reactive and imperative programming models
           - [Bootstrap 5](https://getbootstrap.com/) styles, typography and components
+          - Experimental [Material 3](https://material-web.dev/) design support
           - [Snabbdom](https://github.com/snabbdom/snabbdom) fast virtual DOM implementation
           - [Font Awesome](https://fontawesome.com/) icons
           - Unidirectional and bidirectional bindings for Kotlin Flows
