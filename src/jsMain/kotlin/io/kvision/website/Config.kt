@@ -17,11 +17,11 @@ object Navbar {
 }
 
 object Hero {
-    val version = "7.5.1"
+    val version = "8.0.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
-    val logo: String = require("images/logos/kvision.svg")
+    val logo: String = require("modules/images/logos/kvision.svg")
     val logoAlt = "KVision logo"
     val title = "KVision - object oriented web framework for Kotlin/JS"
     val subtitle =
@@ -98,10 +98,10 @@ object Config {
             "features",
             "Features",
             "Almost 100 ready to use GUI components, used as builder blocks for the application UI",
-            require("images/sky.jpg"),
+            require("modules/images/sky.jpg"),
             listOf(
                 Article(
-                    require("images/illustrations/icons/laptop-globe.svg"),
+                    require("modules/images/illustrations/icons/laptop-globe.svg"),
                     "Solid foundations",
                     """
           - Idiomatic [Kotlin](https://kotlinlang.org/) syntax with type safe DSL builders
@@ -111,13 +111,13 @@ object Config {
           - [Snabbdom](https://github.com/snabbdom/snabbdom) fast virtual DOM implementation
           - [Font Awesome](https://fontawesome.com/) icons
           - Unidirectional and bidirectional bindings for Kotlin Flows
-          - [Redux](https://redux.js.org/) and [ReduxKotlin](https://reduxkotlin.org/) modules
+          - [ReduxKotlin](https://reduxkotlin.org/) module
           - [React](https://reactjs.org/) components and [Onsen UI](https://onsen.io/) mobile web components
           - Internationalization support based on [gettext](https://www.gnu.org/software/gettext/) translations
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/doc-sync.svg"),
+                    require("modules/images/illustrations/icons/doc-sync.svg"),
                     "Rich components library",
                     """
           - Sophisticated layout containers
@@ -139,7 +139,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/plug-cloud.svg"),
+                    require("modules/images/illustrations/icons/plug-cloud.svg"),
                     "Fullstack ready",
                     """
           - Innovative connectivity interface for many popular server side frameworks, to build fullstack applications with shared code for data model and business logic
@@ -154,7 +154,7 @@ object Config {
             "videos",
             "Videos",
             "Watch videos about KVision",
-            require("images/video.jpg"),
+            require("modules/images/video.jpg"),
             videos = listOf(
                 Video(
                     "-mua_TAE-ww",
@@ -173,10 +173,10 @@ object Config {
             "examples",
             "Examples",
             "Explore open source example applications",
-            require("images/blocks.jpg"),
+            require("modules/images/blocks.jpg"),
             listOf(
                 Article(
-                    require("images/illustrations/icons/mouse-globe.svg"),
+                    require("modules/images/illustrations/icons/mouse-globe.svg"),
                     "Showcase",
                     """
           A simple application presenting all main features of the KVision framework.
@@ -185,7 +185,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/doc-sync.svg"),
+                    require("modules/images/illustrations/icons/doc-sync.svg"),
                     "Fomantic-UI demo",
                     """
           A demo application created with [Fomantic-UI](https://fomantic-ui.com/) toolkit. It shows how to create KVision applications with a modern design system alternative to Bootstrap. It also presents state management based on Kotlin flows (using both StateFlow and SharedFlow).
@@ -194,7 +194,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/laptop-cloud.svg"),
+                    require("modules/images/illustrations/icons/laptop-cloud.svg"),
                     "Pokedex PWA",
                     """
           The list of Pokémon with live search, build with the Redux module. It's also a fully compatible [PWA](https://developers.google.com/web/progressive-web-apps/).
@@ -203,7 +203,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/mobile-feed.svg"),
+                    require("modules/images/illustrations/icons/mobile-feed.svg"),
                     "Onsen UI Kitchen Sink",
                     """
           An example mobile application created with KVision's bindings for [Onsen UI](https://onsen.io/) library. It's an almost 1 to 1 rewrite of an official [Vue Kitchen Sink](https://github.com/OnsenUI/vue-onsenui-kitchensink) example. It presents how to use all Onsen UI visual components with fully type safe Kotlin API and DSL builders.
@@ -212,7 +212,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/plug-cloud.svg"),
+                    require("modules/images/illustrations/icons/plug-cloud.svg"),
                     "Fullstack address book",
                     """
           A complete, fullstack address book application. It presents an innovative way to build fullstack applications with KVision and [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) or [Micronaut](https://micronaut.io) frameworks.
@@ -221,7 +221,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/doc-sync.svg"),
+                    require("modules/images/illustrations/icons/doc-sync.svg"),
                     "RealWorld example application",
                     """
           A fully fledged fullstack application based on [RealWorld project](https://realworld.io/) specification, supporting CRUD operations, authentication, routing, pagination, and more.
@@ -232,7 +232,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/mouse-globe.svg"),
+                    require("modules/images/illustrations/icons/mouse-globe.svg"),
                     "KontaktApp application",
                     """
           A Self Management Platform built with KVision and Ktor web framework, created by [Muhammed Aliyu (Andromadus)](https://github.com/phalcorine). Uses Arrow, Ballast, Exposed, Koin, Kotlinx-datetime and Ktor.
@@ -241,7 +241,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/kvision.svg"),
+                    require("modules/images/illustrations/icons/kvision.svg"),
                     "KVision website",
                     """
           This website is created with KVision. The Kotlin sources are available on GitHub.
@@ -250,7 +250,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/laptop-globe.svg"),
+                    require("modules/images/illustrations/icons/laptop-globe.svg"),
                     "More examples and templates",
                     """
           More examples and templates are available in the dedicated GitHub repository.
@@ -264,10 +264,10 @@ object Config {
             "docs",
             "Documentation",
             "Comprehensive source of information",
-            require("images/books.jpg"),
+            require("modules/images/books.jpg"),
             listOf(
                 Article(
-                    require("images/illustrations/icons/laptop-cloud.svg"),
+                    require("modules/images/illustrations/icons/laptop-cloud.svg"),
                     "KVision Guide",
                     """
           The guide is published on GitBook. It contains all information about the framework, its components and typical use cases.
@@ -276,7 +276,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/doc-sync.svg"),
+                    require("modules/images/illustrations/icons/doc-sync.svg"),
                     "API documentation",
                     """
           It's generated directly from the source codes with the Dokka tool.
@@ -285,7 +285,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/laptop-globe.svg"),
+                    require("modules/images/illustrations/icons/laptop-globe.svg"),
                     "Community",
                     """
           Check [KVision blog posts at dev.to](https://dev.to/t/kvision/latest) to learn more about the framework and it's development process.
@@ -298,7 +298,7 @@ object Config {
                     """.trimIndent()
                 ),
                 Article(
-                    require("images/illustrations/icons/mouse-globe.svg"),
+                    require("modules/images/illustrations/icons/mouse-globe.svg"),
                     "Legacy docs",
                     """
           API documentation for KVision 5.x is still available [here](https://rjaros.github.io/kvision/api5/).
@@ -323,27 +323,27 @@ object UseCases {
     val title = "Stable and verified"
     val subtitle = "KVision applications are already running on production websites used by hundreds of users every day"
     val useCases1 = listOf(
-        UseCase("https://peup.finn.pl", require("images/peup.png"), "Public administration services"),
+        UseCase("https://peup.finn.pl", require("modules/images/peup.png"), "Public administration services"),
         UseCase(
             "https://www.eurzad.radlin.pl/#!/rejestry/S.0007/10/1/default/_",
-            require("images/eurzad.png"),
+            require("modules/images/eurzad.png"),
             "The public information bulletin"
         ),
         UseCase(
             "https://rejestr.nil.org.pl/",
-            require("images/crl.png"),
+            require("modules/images/crl.png"),
             "The database of physicians"
         )
     )
     val useCases2 = listOf(
         UseCase(
             "https://sygnalista.zawiercie.powiat.pl/",
-            require("images/sygnalista.png"),
+            require("modules/images/sygnalista.png"),
             "The secure whistleblower system"
         ),
         UseCase(
             "https://e-rezerwacje.finn.pl/gmwodzislawsl/",
-            require("images/erezerwacje.png"),
+            require("modules/images/erezerwacje.png"),
             "The online reservation system"
         ),
     )
@@ -353,7 +353,7 @@ data class FooterColumn(val title: String, val links: Map<String, String>)
 
 @Suppress("UnsafeCastFromDynamic")
 object Footer {
-    val logo: String = require("images/logos/kvision.svg")
+    val logo: String = require("modules/images/logos/kvision.svg")
     val columns =
         listOf(
             FooterColumn(

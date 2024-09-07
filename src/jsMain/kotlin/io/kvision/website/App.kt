@@ -13,7 +13,7 @@ import kotlinx.browser.window
 
 class App : Application() {
     init {
-        require("sass/style.sass")
+        require("modules/sass/style.sass")
     }
 
     override fun start() {
