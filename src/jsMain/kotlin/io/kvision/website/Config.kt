@@ -337,12 +337,12 @@ object UseCases {
     )
     val useCases2 = listOf(
         UseCase(
-            "https://sygnalista.zawiercie.powiat.pl/",
-            require("modules/images/sygnalista.png"),
-            "The secure whistleblower system"
+            "https://oilwarszawa.eizba.finn.pl/",
+            require("modules/images/eizba.png"),
+            "The electronic services for physicians"
         ),
         UseCase(
-            "https://e-rezerwacje.finn.pl/gmwodzislawsl/",
+            "https://e-rezerwacje.finn.pl/pzwieruszow/",
             require("modules/images/erezerwacje.png"),
             "The online reservation system"
         ),
