@@ -339,7 +339,7 @@ object UseCases {
         UseCase(
             "https://oilwarszawa.eizba.finn.pl/",
             require("modules/images/eizba.png"),
-            "The electronic services for physicians"
+            "E-services for physicians"
         ),
         UseCase(
             "https://e-rezerwacje.finn.pl/pzwieruszow/",
