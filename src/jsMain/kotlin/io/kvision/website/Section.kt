@@ -55,7 +55,7 @@ fun Container.article(article: Article, marginClass: String) {
                 p {
                     span(article.title, className = "icon-box-title")
                 }
-                span(marked(article.text), rich = true)
+                span(parse(article.text), rich = true)
             }
         }
     }

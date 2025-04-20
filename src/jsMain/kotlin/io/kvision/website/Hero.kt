@@ -28,7 +28,7 @@ fun Container.hero() {
                         image(Hero.logo, Hero.logoAlt)
                     }
                     h1(Hero.title, className = "title is-1 is-bold is-spaced")
-                    h2(markedInline(Hero.subtitle), rich = true, className = "subtitle is-5 is-muted")
+                    h2(parseInline(Hero.subtitle), rich = true, className = "subtitle is-5 is-muted")
                     h3 {
                         link("Latest release: ${Hero.version}", Hero.releasesUrl, target = "_blank")
                     }

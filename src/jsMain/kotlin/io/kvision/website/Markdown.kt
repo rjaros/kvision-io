@@ -1,9 +1,7 @@
+@file:JsModule("marked")
+
 package io.kvision.website
 
-import io.kvision.require
+internal external fun parse(text: String): String
 
-@Suppress("UnsafeCastFromDynamic")
-val markedInline: (String) -> String = require("marked").parseInline
-
-@Suppress("UnsafeCastFromDynamic")
-val marked: (String) -> String = require("marked")
+internal external fun parseInline(text: String): String

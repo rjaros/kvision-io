@@ -36,6 +36,7 @@ fun handleScroll() {
             val offsetTop = self.offset().top.toInt()
 
             if (height + winHeightPadded > offsetTop) {
+                @Suppress("SENSELESS_COMPARISON")
                 if (self.data("timeout") != undefined) {
                     window.setTimeout({
                         self.addClass("animated " + self.data("animation"))

@@ -5,7 +5,7 @@ KVision sources for the KVision website published at [https://kvision.io](https:
 ## Gradle Tasks
 
 ### Resource Processing
-* generatePotFile - Generates a `src/main/resources/i18n/messages.pot` translation template file.
+* generatePotFile - Generates a `src/main/resources/modules/i18n/messages.pot` translation template file.
 ### Running
 * run - Starts a webpack dev server on port 3000.
 ### Packaging

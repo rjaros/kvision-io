@@ -15,12 +15,12 @@ repositories {
 }
 
 // Versions
-val kotlinVersion: String by System.getProperties()
 val kvisionVersion: String by System.getProperties()
 
 kotlin {
     js {
         browser {
+            useEsModules()
             runTask {
                 mainOutputFileName = "main.bundle.js"
                 sourceMaps = false
@@ -35,6 +35,9 @@ kotlin {
             }
         }
         binaries.executable()
+        compilerOptions {
+            target.set("es2015")
+        }
     }
     sourceSets["jsMain"].dependencies {
         implementation(npm("sass", "^1.29.0"))
