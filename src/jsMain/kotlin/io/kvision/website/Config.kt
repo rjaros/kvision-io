@@ -2,55 +2,55 @@ package io.kvision.website
 
 import io.kvision.types.toDateF
 
-@JsModule("/kotlin/modules/images/logos/kvision.svg")
+@JsModule("./modules/images/logos/kvision.svg")
 external val kvisionSvg: dynamic
 
-@JsModule("/kotlin/modules/images/sky.jpg")
+@JsModule("./modules/images/sky.jpg")
 external val skyJpg: dynamic
 
-@JsModule("/kotlin/modules/images/blocks.jpg")
+@JsModule("./modules/images/blocks.jpg")
 external val blocksJpg: dynamic
 
-@JsModule("/kotlin/modules/images/video.jpg")
+@JsModule("./modules/images/video.jpg")
 external val videoJpg: dynamic
 
-@JsModule("/kotlin/modules/images/books.jpg")
+@JsModule("./modules/images/books.jpg")
 external val booksJpg: dynamic
 
-@JsModule("/kotlin/modules/images/peup.png")
+@JsModule("./modules/images/peup.png")
 external val peupPng: dynamic
 
-@JsModule("/kotlin/modules/images/eurzad.png")
+@JsModule("./modules/images/eurzad.png")
 external val eurzadPng: dynamic
 
-@JsModule("/kotlin/modules/images/crl.png")
+@JsModule("./modules/images/crl.png")
 external val crlPng: dynamic
 
-@JsModule("/kotlin/modules/images/eizba.png")
+@JsModule("./modules/images/eizba.png")
 external val eizbaPng: dynamic
 
-@JsModule("/kotlin/modules/images/erezerwacje.png")
+@JsModule("./modules/images/erezerwacje.png")
 external val erezerwacjePng: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/laptop-globe.svg")
+@JsModule("./modules/images/illustrations/icons/laptop-globe.svg")
 external val laptopGlobeSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/laptop-cloud.svg")
+@JsModule("./modules/images/illustrations/icons/laptop-cloud.svg")
 external val laptopCloudSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/doc-sync.svg")
+@JsModule("./modules/images/illustrations/icons/doc-sync.svg")
 external val docSyncSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/mouse-globe.svg")
+@JsModule("./modules/images/illustrations/icons/mouse-globe.svg")
 external val mouseGlobeSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/mobile-feed.svg")
+@JsModule("./modules/images/illustrations/icons/mobile-feed.svg")
 external val mobileFeedSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/plug-cloud.svg")
+@JsModule("./modules/images/illustrations/icons/plug-cloud.svg")
 external val plugCloudSvg: dynamic
 
-@JsModule("/kotlin/modules/images/illustrations/icons/kvision.svg")
+@JsModule("./modules/images/illustrations/icons/kvision.svg")
 external val kvisionIconSvg: dynamic
 
 object Navbar {
@@ -67,7 +67,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "9.2.2"
+    val version = "9.3.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")

@@ -12,8 +12,8 @@ import io.kvision.utils.useModule
 import kotlinx.browser.window
 import kotlin.js.unsafeCast
 
-@JsModule("/kotlin/modules/sass/style.sass")
-external val styleSass: dynamic
+@JsModule("./modules/sass/style.sass")
+external object styleSass
 
 class App : Application() {
     init {
