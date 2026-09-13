@@ -67,7 +67,7 @@ object Navbar {
 }
 
 object Hero {
-    val version = "9.6.0"
+    val version = "9.7.0"
     val releasesUrl = "https://github.com/rjaros/kvision/releases"
 
     @Suppress("UnsafeCastFromDynamic")
@@ -193,7 +193,7 @@ object Config {
                     "Fullstack ready",
                     """
           - Integrated with [Kilua RPC](https://github.com/rjaros/kilua-rpc) companion library to build fullstack applications with shared code for data model and business logic
-          - Full support for [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) and [Micronaut](https://micronaut.io) frameworks
+          - Full support for [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io), [Micronaut](https://micronaut.io) and [Quarkus](https://quarkus.io) frameworks
           - Type safe websockets connections
           - Type safe SSE (server-sent events)
                     """.trimIndent()
@@ -265,7 +265,7 @@ object Config {
                     plugCloudSvg,
                     "Fullstack address book",
                     """
-          A complete, fullstack address book application. It presents an innovative way to build fullstack applications with KVision and [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io) or [Micronaut](https://micronaut.io) frameworks.
+          A complete, fullstack address book application. It presents an innovative way to build fullstack applications with KVision and [Ktor](https://ktor.io), [Jooby](https://jooby.io), [Spring Boot](https://spring.io/projects/spring-boot), [Javalin](https://javalin.io), [Vert.x](https://vertx.io), [Micronaut](https://micronaut.io) or [Quarkus](https://quarkus.io) frameworks.
 
           \[ [Spring Boot version sources](https://github.com/rjaros/kvision-examples/tree/master/addressbook-fullstack-spring-boot) \]
                     """.trimIndent()
